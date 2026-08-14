@@ -183,15 +183,25 @@ Features include:
 The system automatically calculates important inventory and financial metrics.
 
 - Current Stock
+ ```text
 Current Stock = Stock In − Stock Out
+ ```
 - Revenue
+```text
 Revenue = Stock Out Quantity × Selling Price
+ ```
 - Cost
+ ```text
 Cost = Stock Out Quantity × Purchase Price
+ ```
 - Profit
+ ```text
 Profit = Revenue − Cost
+ ```
 - Product-Level Profit
+```text
 Profit Per Unit = Selling Price − Purchase Price
+ ```
 ### Data Storage
 
 This application does not require:
@@ -214,6 +224,7 @@ Data remains available after refreshing the browser.
 
 Note: Clearing the browser's LocalStorage will remove the application's locally stored data.
 ### Project Structure
+ ```text
 udevs-warehouse-management/
 │
 ├── public/
@@ -256,16 +267,17 @@ udevs-warehouse-management/
 ├── package.json
 ├── vite.config.js
 └── README.md
+ ```
 ### Application Routes
 
 The four main assignment routes are:
-
+ ```text
 - Route	Page
 /	Dashboard
 /products	Products
 /stock	Stock Management
 /users	Users
-
+ ```
 Additional supporting routes may also be available for the application's welcome/authentication flow.
 
 ###  Installation & Setup
@@ -273,9 +285,11 @@ Additional supporting routes may also be available for the application's welcome
 ```text
 git clone <your-github-repository-url>
  ```
-3. Navigate to the project directory
+2. Navigate to the project directory
+ ```
 cd udevs-warehouse-management
-4. Install dependencies
+ ```
+3. Install dependencies
 ```text
 npm install
  ```
@@ -341,7 +355,7 @@ Examples include:
   ##  Example Stock Transaction
 
 Suppose a product has:
-
+ ```text
 Purchase Price = Rs. 1,500
 Selling Price  = Rs. 2,200
 Quantity       = 10
@@ -358,6 +372,7 @@ Cost = 10 × 1,500
 
 Profit = 22,000 − 15,000
        = Rs. 7,000
+ ```
 ### Development
 
 Run the project in development mode:
